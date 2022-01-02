@@ -13,7 +13,7 @@
 		"lint:fix": "eslint src --ext .ts,.vue --fix",
 		"dev": "vite --port 3333",
 		"dev:open": "vite --port 3333 --open",
-		"build": "vue-tsc --noEmit && vite build",
+		"build": "vue-tsc --noEmit && vite build && npx ncp ./.nojekyll ./dist/.nojekyll",
 		"serve": "vite preview"
 	},
 	"license": "Apache-2.0",
@@ -53,6 +53,7 @@
 		"eslint-config-prettier": "^8.3.0",
 		"eslint-plugin-prettier": "^3.4.0",
 		"eslint-plugin-vue": "^7.15.0",
+		"ncp": "^2.0.0",
 		"postcss": "^8.3.6",
 		"postcss-focus-visible": "^5.0.0",
 		"prettier": "^2.3.2",
