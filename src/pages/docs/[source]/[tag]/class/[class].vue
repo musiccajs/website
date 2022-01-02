@@ -3,9 +3,19 @@
 		<SourceButton class="float-right mt-2" :meta="cls?.meta" />
 
 		<div class="prose prose-discord dark:prose-light break-words-legacy mx-auto max-w-4xl lg:max-w-full">
-			<h1 :id="`doc-for-${cls?.name}`" class="!mb-3">
-				{{ cls?.name }}
-			</h1>
+			<span class="inline-flex space-x-4 items-center">
+				<h1 :id="`doc-for-${cls?.name}`" class="!mb-3">
+					{{ cls?.name }}
+				</h1>
+
+				<div v-if="cls?.abstract">
+					<span
+						class="text-gray-200 text-sm font-semibold uppercase inline-flex items-center px-2.5 py-0.5 rounded-md bg-discord-blurple-500"
+					>
+						Abstract
+					</span>
+				</div>
+			</span>
 			<p class="font-bold !mt-3">
 				<span v-if="cls?.extends">
 					extends
@@ -25,7 +35,7 @@
 				<h2 class="!mt-3">Constructor</h2>
 				<pre
 					ref="codeblock"
-					class="javascript"
+					class="typescript"
 				><code>new {{ docs?.global }}.{{ cls?.name }}(<span v-for="(param, idx) in constructorParameters" :key="param.name">{{ param.name }}{{ (constructorParameters?.length ?? 1) - 1 !== idx ? ', ' : '' }}</span>);</code></pre>
 				<ParameterTable v-if="cls.construct.params" :parameters="cls.construct.params" />
 			</div>

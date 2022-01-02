@@ -1,9 +1,13 @@
 <template>
 	<footer class="bg-discord-blurple-560">
 		<div class="max-w-3xl mx-auto text-center px-16 pt-10 pb-4 text-gray-200">
-			<strong><router-link to="/">discord.js</router-link></strong>
-			<p class="mb-4">A powerful library for interacting with the Discord API</p>
+			<strong><router-link to="/">Musicca</router-link></strong>
+			<p class="mb-4">A modular, extensible and flexible media stream manager for Node.js</p>
 			<Stats class="mb-4" />
+			<p class="break-words-legacy mb-4">
+				Originally made for
+				<a href="https://discord.js.org" target="_blank" rel="noopener noreferrer">discord.js website</a>
+			</p>
 			<p class="text-xs break-words-legacy">
 				commit: {{ gitCommit }}<br />
 				built at: {{ builtAt }}

@@ -64,8 +64,7 @@ const docs = computed(() => store.state.docs);
 const optional = computed(() => props.parameters.some((parameter) => parameter.optional));
 
 const parameterDescription = (parameter: any) =>
-	// @ts-expect-error
-	markdown(convertLinks(parameter.description ?? 'No description.', docs.value, router, route));
+	markdown(convertLinks(parameter.description ?? 'No description.', docs.value, router, route) ?? 'No description.');
 const parameterDefault = (parameter: ParameterUnion) => (parameter.optional ? `<code>${parameter.default}</code>` : '');
 </script>
 

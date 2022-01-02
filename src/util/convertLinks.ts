@@ -4,8 +4,13 @@ import { Documentation } from '~/interfaces/Documentation';
 import { parseLink } from './parseLink';
 
 // Converts all JSDoc links to markdown links
-export function convertLinks(text: string, docs: Documentation, router: Router, route: RouteLocationNormalizedLoaded) {
-	if (!text) return null;
+export function convertLinks(
+	text: string,
+	docs: Documentation | null,
+	router: Router,
+	route: RouteLocationNormalizedLoaded,
+) {
+	if (!text || !docs) return null;
 
 	const regex = /\{@link\s+(.+?)(?:\s+(.+?))?\s*\}/gi;
 	let match;

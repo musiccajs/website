@@ -21,11 +21,9 @@ import { whenever, useEventListener, useMagicKeys } from '@vueuse/core';
 
 import { useStore } from '~/store';
 import MainSource from '~/data/MainSource';
-import CollectionSource from '~/data/CollectionSource';
-import BuildersSource from '~/data/BuildersSource';
-import VoiceSource from '~/data/VoiceSource';
-import CommandoSource from '~/data/CommandoSource';
-import RPCSource from '~/data/RPCSource';
+import StructsSource from '~/data/StructsSource';
+import ExtractorsSource from '~/data/ExtractorsSource';
+
 import { fetchError } from '~/util/fetchError';
 
 import Sidebar from '~/components/Sidebar.vue';
@@ -46,11 +44,8 @@ const { Ctrl_K } = useMagicKeys({
 
 const sources = reactive({
 	[MainSource.id]: MainSource,
-	[CollectionSource.id]: CollectionSource,
-	[BuildersSource.id]: BuildersSource,
-	[VoiceSource.id]: VoiceSource,
-	[CommandoSource.id]: CommandoSource,
-	[RPCSource.id]: RPCSource,
+	[StructsSource.id]: StructsSource,
+	[ExtractorsSource.id]: ExtractorsSource,
 });
 
 const showBackToTop = ref(false);
