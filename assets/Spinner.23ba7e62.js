@@ -1,0 +1,1 @@
+import{_ as s}from"./index.180e5375.js";import{o,b as t,e}from"./vendor.e47133c2.js";const c={},r={class:"relative h-10 w-10 my-60 mx-auto"},_=e("div",{class:"cube1 bg-discord-blurple-560 h-4 w-4 absolute"},null,-1),n=e("div",{class:"cube2 bg-discord-blurple-560 h-4 w-4 absolute"},null,-1),a=[_,n];function l(i,d){return o(),t("div",r,a)}var b=s(c,[["render",l]]);export{b as S};
