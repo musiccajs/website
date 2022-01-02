@@ -43,9 +43,9 @@ setDefaultHandler((args) => {
 });
 
 registerRoute(
-	/^https:\/\/raw\.githubusercontent\.com\/discordjs\/.*\.json/i,
+	/^https:\/\/raw\.githubusercontent\.com\/musiccajs\/.*\.json/i,
 	new NetworkFirst({
-		cacheName: 'djs-docs-v3',
+		cacheName: 'musicca-docs-v3',
 		plugins: [
 			new ExpirationPlugin({
 				maxEntries: 20,
@@ -59,7 +59,7 @@ registerRoute(
 registerRoute(
 	/^.*\\.(png|jpg|jpeg|gif|svg|ico)/i,
 	new CacheFirst({
-		cacheName: 'djs-media-v3',
+		cacheName: 'musicca-media-v3',
 		plugins: [
 			new ExpirationPlugin({
 				maxEntries: 50,

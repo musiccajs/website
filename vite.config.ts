@@ -35,8 +35,7 @@ export default defineConfig({
 				short_name: 'Musicca Docs',
 				start_url: '.',
 				display: 'standalone',
-				description:
-					"Musicca is a modular, extensible and flexible media stream manager for Node.js",
+				description: 'Musicca is a modular, extensible and flexible media stream manager for Node.js',
 				icons: [
 					{
 						src: '/android-chrome-192x192.png',
