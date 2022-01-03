@@ -29,8 +29,8 @@ export default defineConfig({
 			strategies: 'injectManifest',
 			registerType: 'autoUpdate',
 			manifest: {
-				theme_color: '#090a16',
-				background_color: '#090a16',
+				theme_color: '#ff3f3f',
+				background_color: '#ff3f3f',
 				name: 'Musicca Docs',
 				short_name: 'Musicca Docs',
 				start_url: '.',
