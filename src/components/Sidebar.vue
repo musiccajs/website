@@ -12,9 +12,9 @@
 				inline-flex
 				items-center
 				justify-center
-				text-gray-200
-				bg-discord-blurple-600
-				hover:bg-discord-blurple-630 hover:text-white
+				text-gray-100
+				bg-musicca-crimson-600
+				hover:bg-musicca-crimson-630 hover:text-white
 				focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white
 			"
 			aria-controls="sidebar-menu"
@@ -70,7 +70,7 @@
 													flex
 													justify-between
 													items-center
-													dark:text-gray-200
+													dark:text-gray-100
 													rounded
 													bg-gray-100
 													dark:bg-[#1d1d1d]
@@ -109,7 +109,7 @@
 													class="cursor-default"
 													:value="source"
 												>
-													<li class="px-3 py-1" :class="{ 'bg-discord-blurple-500 text-gray-200': active }">
+													<li class="px-3 py-1" :class="{ 'bg-musicca-crimson-500 text-gray-100': active }">
 														<span class="truncate">{{ source.name }}</span>
 													</li>
 												</ListboxOption>
@@ -130,7 +130,7 @@
 													flex
 													justify-between
 													items-center
-													dark:text-gray-200
+													dark:text-gray-100
 													rounded
 													bg-gray-100
 													dark:bg-[#1d1d1d]
@@ -169,7 +169,7 @@
 													class="cursor-default"
 													:value="branch"
 												>
-													<li class="px-3 py-1" :class="{ 'bg-discord-blurple-500 text-gray-200': active }">
+													<li class="px-3 py-1" :class="{ 'bg-musicca-crimson-500 text-gray-100': active }">
 														<span class="truncate">{{ branch }}</span>
 													</li>
 												</ListboxOption>
@@ -180,11 +180,11 @@
 								<li>
 									<SwitchGroup>
 										<div class="flex justify-between px-2">
-											<SwitchLabel class="mr-4 dark:text-gray-200">Show privates</SwitchLabel>
+											<SwitchLabel class="mr-4 dark:text-gray-100">Show privates</SwitchLabel>
 											<Switch
 												v-model="isShowPrivates"
 												class="relative inline-flex h-6 items-center rounded-full w-11 focus:outline-none"
-												:class="isShowPrivates ? 'bg-discord-red-500' : 'bg-gray-500'"
+												:class="isShowPrivates ? 'bg-musicca-red-500' : 'bg-gray-500'"
 											>
 												<span
 													class="inline-block w-4 h-4 bg-white rounded-full transition transform-gpu z-20"
@@ -232,7 +232,7 @@
 											dark:text-gray-300
 											border-l-4 border-transparent
 											rounded-sm
-											hover:border-l-4 hover:border-discord-blurple-500 hover:text-gray-800
+											hover:border-l-4 hover:border-musicca-crimson-500 hover:text-gray-800
 											dark:hover:text-gray-100
 											group
 											flex
@@ -244,7 +244,7 @@
 											focus:outline-none
 											focus-visible:ring-1 focus-visible:ring-white
 										"
-										exact-active-class="border-l-4 border-discord-blurple-530 text-gray-900"
+										exact-active-class="border-l-4 border-musicca-crimson-530 text-gray-900"
 										@click="isOpen = false"
 									>
 										<span class="truncate">{{ typeof file === 'object' ? file.name : file }}</span>
@@ -281,7 +281,7 @@
 										dark:text-gray-300
 										border-l-4 border-transparent
 										rounded-sm
-										hover:border-l-4 hover:border-discord-blurple-500 hover:text-gray-800
+										hover:border-l-4 hover:border-musicca-crimson-500 hover:text-gray-800
 										dark:hover:text-gray-100
 										group
 										flex
@@ -293,7 +293,7 @@
 										focus:outline-none
 										focus-visible:ring-1 focus-visible:ring-white
 									"
-									exact-active-class="border-l-4 border-discord-blurple-530 text-gray-900"
+									exact-active-class="border-l-4 border-musicca-crimson-530 text-gray-900"
 									@click="isOpen = false"
 								>
 									<span class="truncate">{{ cls.name }}</span>
@@ -329,7 +329,7 @@
 										dark:text-gray-300
 										border-l-4 border-transparent
 										rounded-sm
-										hover:border-l-4 hover:border-discord-blurple-500 hover:text-gray-800
+										hover:border-l-4 hover:border-musicca-crimson-500 hover:text-gray-800
 										dark:hover:text-gray-100
 										group
 										flex
@@ -341,7 +341,7 @@
 										focus:outline-none
 										focus-visible:ring-1 focus-visible:ring-white
 									"
-									exact-active-class="border-l-4 border-discord-blurple-530 text-gray-900"
+									exact-active-class="border-l-4 border-musicca-crimson-530 text-gray-900"
 									@click="isOpen = false"
 								>
 									<span class="truncate">{{ typedef.name }}</span>

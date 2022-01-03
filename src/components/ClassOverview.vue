@@ -19,7 +19,7 @@
 					<li
 						v-for="property in visibleProperties"
 						:key="scopedName(property)"
-						class="cursor-pointer mb-14 border-l-4 border-transparent rounded-sm hover:border-l-4 hover:border-discord-blurple-500"
+						class="cursor-pointer mb-14 border-l-4 border-transparent rounded-sm hover:border-l-4 hover:border-musicca-crimson-500"
 						@click="scrollTo(scopedName(property))"
 					>
 						<router-link
@@ -28,25 +28,25 @@
 						>
 							{{ property.name }}
 						</router-link>
-						<span class="space-x-1 text-gray-200 text-sm font-semibold uppercase">
+						<span class="space-x-1 text-gray-100 text-sm font-semibold uppercase">
 							<span
 								v-if="property.scope === 'static'"
-								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-discord-blurple-500"
+								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-musicca-crimson-500"
 								>S</span
 							>
 							<span
 								v-if="property.abstract"
-								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-discord-blurple-500"
+								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-musicca-crimson-500"
 								>A</span
 							>
 							<span
 								v-if="property.deprecated"
-								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-discord-red-500"
+								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-musicca-red-500"
 								>D</span
 							>
 							<span
 								v-if="property.access === 'private'"
-								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-discord-red-500"
+								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-musicca-red-500"
 								>P</span
 							>
 						</span>
@@ -74,7 +74,7 @@
 					<li
 						v-for="method in visibleMethods"
 						:key="scopedName(method)"
-						class="cursor-pointer border-l-4 border-transparent rounded-sm hover:border-l-4 hover:border-discord-blurple-500"
+						class="cursor-pointer border-l-4 border-transparent rounded-sm hover:border-l-4 hover:border-musicca-crimson-500"
 						@click="scrollTo(scopedName(method))"
 					>
 						<router-link
@@ -83,25 +83,25 @@
 						>
 							{{ method.name }}
 						</router-link>
-						<span class="space-x-1 text-gray-200 text-sm font-semibold uppercase">
+						<span class="space-x-1 text-gray-100 text-sm font-semibold uppercase">
 							<span
 								v-if="method.scope === 'static'"
-								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-discord-blurple-500"
+								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-musicca-crimson-500"
 								>S</span
 							>
 							<span
 								v-if="method.abstract"
-								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-discord-blurple-500"
+								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-musicca-crimson-500"
 								>A</span
 							>
 							<span
 								v-if="method.deprecated"
-								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-discord-red-500"
+								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-musicca-red-500"
 								>D</span
 							>
 							<span
 								v-if="method.access === 'private'"
-								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-discord-red-500"
+								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-musicca-red-500"
 								>P</span
 							>
 						</span>
@@ -129,7 +129,7 @@
 					<li
 						v-for="event in visibleEvents"
 						:key="event.name"
-						class="cursor-pointer border-l-4 border-transparent rounded-sm hover:border-l-4 hover:border-discord-blurple-500"
+						class="cursor-pointer border-l-4 border-transparent rounded-sm hover:border-l-4 hover:border-musicca-crimson-500"
 						@click="scrollTo(`e-${event.name}`)"
 					>
 						<router-link
@@ -140,7 +140,7 @@
 						</router-link>
 						<span
 							v-if="event.deprecated"
-							class="text-gray-200 text-sm font-semibold uppercase inline-flex items-center justify-center w-6 h-6 rounded-md bg-discord-red-500"
+							class="text-gray-100 text-sm font-semibold uppercase inline-flex items-center justify-center w-6 h-6 rounded-md bg-musicca-red-500"
 							>D</span
 						>
 					</li>

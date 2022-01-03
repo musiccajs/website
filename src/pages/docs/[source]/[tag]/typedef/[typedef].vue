@@ -10,12 +10,14 @@
 			<p v-if="typedef?.description" v-html="description"></p>
 			<See v-if="typedef?.see?.length" :see="typedef?.see" />
 
-			<h2>Types</h2>
-			<ul id="typedef-types">
-				<li v-for="type in typedef?.type" :key="typeKey(type)">
-					<ExpandableTypes class="!m-0" :names="type" />
-				</li>
-			</ul>
+			<div v-if="typedef?.type">
+				<h2>Types</h2>
+				<ul id="typedef-types">
+					<li v-for="type in typedef?.type" :key="typeKey(type)">
+						<ExpandableTypes class="!m-0" :names="type" />
+					</li>
+				</ul>
+			</div>
 
 			<div v-if="typedef?.props && typedef?.props.length">
 				<h2>Properties</h2>

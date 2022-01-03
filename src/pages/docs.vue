@@ -3,7 +3,7 @@
 		<div class="lg:flex mx-auto w-full max-w-screen-2xl">
 			<Sidebar />
 			<router-view v-if="docs" :key="$route.path" />
-			<div v-else-if="fetchError" class="mx-auto py-16 sm:px-8 lg:py-8 w-full text-center dark:text-gray-200">
+			<div v-else-if="fetchError" class="mx-auto py-16 sm:px-8 lg:py-8 w-full text-center dark:text-gray-100">
 				Couldn't load the documentation data.
 				<pre>{{ fetchError.toString() }}</pre>
 			</div>

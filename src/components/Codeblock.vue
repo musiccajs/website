@@ -22,13 +22,13 @@
 				>
 					<heroicons-outline-clipboard-copy
 						v-if="!copied"
-						class="fill-current text-gray-700 dark:text-gray-200"
+						class="fill-current text-gray-700 dark:text-gray-100"
 						aria-hidden="true"
 						@click="copyCode"
 					/>
 					<heroicons-outline-clipboard-check
 						v-else
-						class="fill-current text-discord-green-600 dark:text-discord-green-500"
+						class="fill-current text-musicca-green-600 dark:text-musicca-green-500"
 						aria-hidden="true"
 						@click="copyCode"
 					/>

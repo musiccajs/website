@@ -8,8 +8,8 @@
 					event.name
 				}}</router-link>
 			</h3>
-			<span class="text-gray-200 text-sm font-semibold uppercase pt-6">
-				<span v-if="event.deprecated" class="inline-flex items-center px-2.5 py-0.5 rounded-md bg-discord-red-500"
+			<span class="text-gray-100 text-sm font-semibold uppercase pt-6">
+				<span v-if="event.deprecated" class="inline-flex items-center px-2.5 py-0.5 rounded-md bg-musicca-red-500"
 					>Deprecated</span
 				>
 			</span>

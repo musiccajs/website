@@ -5,7 +5,7 @@
 @layer base {
 	html,
 	body {
-		@apply bg-discord-blurple-560;
+		@apply bg-musicca-crimson-560;
 	}
 
 	body {
@@ -51,7 +51,7 @@
 
 	.custom-scroll {
 		scrollbar-width: thin;
-		scrollbar-color: theme('colors.discord.blurple.460') #1d1d1d;
+		scrollbar-color: theme('colors.musicca.crimson.460') #1d1d1d;
 	}
 
 	.custom-scroll::-webkit-scrollbar {
@@ -60,11 +60,11 @@
 	}
 
 	.custom-scroll::-webkit-scrollbar-thumb {
-		background: theme('colors.discord.blurple.460');
+		background: theme('colors.musicca.crimson.460');
 	}
 
 	.custom-scroll::-webkit-scrollbar-thumb:hover {
-		background: theme('colors.discord.blurple.430');
+		background: theme('colors.musicca.crimson.430');
 	}
 
 	.custom-scroll::-webkit-scrollbar-track {
@@ -91,13 +91,13 @@
 }
 
 .info {
-	@apply dark:text-gray-200 p-2 border-l-4 border-discord-blurple-500 mt-4;
+	@apply dark:text-gray-100 p-2 border-l-4 border-musicca-crimson-500 mt-4;
 	/* prettier-ignore */
-	background: theme('colors.discord.blurple.400')50;
+	background: theme('colors.musicca.crimson.400')50;
 }
 
 .warn {
-	@apply dark:text-gray-200 p-2 border-l-4 border-discord-red-500 mt-4;
+	@apply dark:text-gray-100 p-2 border-l-4 border-musicca-red-500 mt-4;
 	/* prettier-ignore */
-	background: theme('colors.discord.red.400')50;
+	background: theme('colors.musicca.red.400')50;
 }

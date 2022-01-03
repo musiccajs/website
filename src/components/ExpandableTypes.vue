@@ -44,6 +44,9 @@ const docs = computed(() => store.state.docs);
 
 const typedef = ref(docs.value?.typedefs.find((typedef) => typedef.name === props.names[0][0]));
 
-// @ts-expect-error
-const description = computed(() => markdown(convertLinks(typedef.value?.description, docs.value, router, route) ?? ''));
+const description = computed(() =>
+	markdown(
+		convertLinks(typedef.value?.description ?? 'No description.', docs.value, router, route) ?? 'No description.',
+	),
+);
 </script>

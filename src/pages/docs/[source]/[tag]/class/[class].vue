@@ -10,7 +10,7 @@
 
 				<div v-if="cls?.abstract">
 					<span
-						class="text-gray-200 text-sm font-semibold uppercase inline-flex items-center px-2.5 py-0.5 rounded-md bg-discord-blurple-500"
+						class="text-gray-100 text-sm font-semibold uppercase inline-flex items-center px-2.5 py-0.5 rounded-md bg-musicca-crimson-500"
 					>
 						Abstract
 					</span>

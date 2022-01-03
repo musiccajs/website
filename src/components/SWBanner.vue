@@ -1,11 +1,11 @@
 <template>
 	<div v-if="offlineReady || needRefresh" class="fixed bottom-0 inset-x-0 pb-2 sm:pb-5 z-20">
 		<div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
-			<div class="p-2 rounded-lg bg-discord-blurple-600 dark:bg-discord-blurple-700 shadow-lg sm:p-3">
+			<div class="p-2 rounded-lg bg-musicca-crimson-600 dark:bg-musicca-crimson-700 shadow-lg sm:p-3">
 				<div class="flex items-center justify-between flex-wrap">
 					<div class="w-0 flex-1 flex items-center">
-						<span class="flex p-2 rounded-lg bg-discord-blurple-530 dark:bg-discord-blurple-630">
-							<heroicons-outline-download class="fill-current text-gray-200 h-6 w-6" aria-hidden="true" />
+						<span class="flex p-2 rounded-lg bg-musicca-crimson-530 dark:bg-musicca-crimson-630">
+							<heroicons-outline-download class="fill-current text-gray-100 h-6 w-6" aria-hidden="true" />
 						</span>
 						<p class="ml-3 font-medium text-white truncate">
 							<span class="sm:hidden">{{
@@ -28,11 +28,11 @@
 								rounded-md
 								text-sm
 								font-medium
-								text-gray-200
-								bg-discord-blurple-530
-								dark:bg-discord-blurple-630
-								hover:bg-discord-blurple-460
-								dark:hover:bg-discord-blurple-600
+								text-gray-100
+								bg-musicca-crimson-530
+								dark:bg-musicca-crimson-630
+								hover:bg-musicca-crimson-460
+								dark:hover:bg-musicca-crimson-600
 								focus:outline-none
 								focus-visible:ring-1 focus-visible:ring-white
 							"
@@ -48,7 +48,7 @@
 							@click="close"
 						>
 							<span class="sr-only">Dismiss</span>
-							<heroicons-outline-x class="fill-current text-gray-200 h-6 w-6" aria-hidden="true" />
+							<heroicons-outline-x class="fill-current text-gray-100 h-6 w-6" aria-hidden="true" />
 						</button>
 					</div>
 				</div>
