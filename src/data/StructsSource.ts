@@ -9,6 +9,7 @@ export default new DocsSource({
 	global: 'Structs',
 	repo: 'musiccajs/structs',
 	defaultTag: 'main',
-	branchFilter: (branch: string) => !branchBlacklist.has(branch) && !branch.startsWith('dependabot/'),
+	branchFilter: (branch: string) =>
+		!branchBlacklist.has(branch) && !branch.startsWith('dependabot/') && !branch.startsWith('renovate/'),
 	tagFilter: (tag: string) => semver.gte(tag.replace(/^v/, ''), '2.0.0'),
 });
