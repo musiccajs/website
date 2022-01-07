@@ -1,4 +1,0 @@
-import{d as i,m as p,c as n,O as d,o as u,b as f,h as _,f as r,e as h}from"./vendor.e47133c2.js";import{u as x}from"./index.34a1d04b.js";import{m as y,_ as g}from"./SourceButton.3d6620c5.js";const k={class:"prose prose-discord dark:prose-light mx-auto py-16 px-4 break-words-legacy sm:px-8 lg:py-8 w-full max-w-4xl lg:max-w-full"},v=["innerHTML"],$=i({setup(w){const a=p(),s=x(),c=n(()=>s.state.docs),l=n(()=>s.state.file),m=n(()=>{var t;const e=(t=c.value)==null?void 0:t.custom[a.params.category].files[a.params.file];if(!e)return;s.commit({type:"setFile",file:e});let o;return e.type==="md"?o=e.content:o=`# ${e.name}
-\`\`\`${e.type}
-${e.content}
-\`\`\``,y(o)});return d(()=>{const e=document.getElementById("container");e&&e.scrollTop>200&&e.scrollTo({top:0,behavior:"smooth"})}),(e,o)=>{var t;return u(),f("div",k,[_(g,{class:"float-right mt-2",path:(t=r(l))==null?void 0:t.path},null,8,["path"]),h("div",{innerHTML:r(m)},null,8,v)])}}});export{$ as default};
