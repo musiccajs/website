@@ -42,9 +42,9 @@ export const store = createStore<State>({
 		branches: [],
 		file: null,
 		stats: {
-			downloads: `${(50).toLocaleString()}+`,
-			stars: `${(1).toLocaleString()}+`,
-			contributors: `${(2).toLocaleString()}+`,
+			downloads: '300+',
+			stars: '3+',
+			contributors: '2+',
 		},
 		searchIndex: [],
 		searchRef: [],
