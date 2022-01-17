@@ -21,7 +21,6 @@ import { whenever, useEventListener, useMagicKeys } from '@vueuse/core';
 
 import { useStore } from '~/store';
 import MainSource from '~/data/MainSource';
-import StructsSource from '~/data/StructsSource';
 import ExtractorsSource from '~/data/ExtractorsSource';
 
 import { fetchError } from '~/util/fetchError';
@@ -44,7 +43,6 @@ const { Ctrl_K } = useMagicKeys({
 
 const sources = reactive({
 	[MainSource.id]: MainSource,
-	[StructsSource.id]: StructsSource,
 	[ExtractorsSource.id]: ExtractorsSource,
 });
 
