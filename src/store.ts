@@ -3,7 +3,6 @@ import { createStore, useStore as baseUseStore, Store } from 'vuex';
 
 import DocsSource from './data/DocsSource';
 import MainSource from './data/MainSource';
-import StructsSource from './data/StructsSource';
 import ExtractorsSource from './data/ExtractorsSource';
 
 import { Documentation, DocumentationCustomFile } from './interfaces/Documentation';
@@ -33,7 +32,6 @@ export const store = createStore<State>({
 	state: {
 		sources: [
 			{ source: MainSource, name: MainSource.name, id: MainSource.id },
-			{ source: StructsSource, name: StructsSource.name, id: StructsSource.id },
 			{ source: ExtractorsSource, name: ExtractorsSource.name, id: ExtractorsSource.id },
 		],
 		source: MainSource,
